@@ -2509,3 +2509,13 @@ html, body {
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
 }
+@media (max-height: 950px) and (min-width: 1040px) {
+  .deebo_fn__cv .cv__header .in  {
+    height: 100%;
+    display: flex;
+	overflow-y:auto; 
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
