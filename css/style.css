@@ -2498,10 +2498,14 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 
 @media (max-width: 540px) {
     .deebo_fn__cv {
-        width: 100vw;
+        width: min(100%, 100vw);
         max-width: 100%;
     }
     .cv__header {
         width: 100%;
     }
+}
+html, body {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
