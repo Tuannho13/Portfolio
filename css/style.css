@@ -189,11 +189,12 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 	opacity: 0;
 }
 .deebo_fn__cv .cv__content{
-  	scrollbar-width: thin;
-  	scrollbar-color: #000 #000;
+  	
+  	scrollbar-color: none;
 }
 .deebo_fn__cv .cv__content::-webkit-scrollbar{
 	width: 14px;
+	height: 6px;
 }
 .deebo_fn__cv .cv__content:-webkit-scrollbar-track{
 	background: #000;
@@ -252,7 +253,6 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 	justify-content: center;
 	padding: 40px 10%;
 	border-radius: 10px;
-	overflow-y: scroll;
 }
 
 .deebo_fn__cv .cv__header .in{
@@ -2322,19 +2322,20 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 		z-index: 999;
 	}
 	.deebo_fn__cv{
-		scrollbar-width: thin;
-		scrollbar-color: #000 #000;
+		scrollbar-width: none;
+		visibility: hidden;
 	}
 	.deebo_fn__cv::-webkit-scrollbar{
-		width: 8px;
+		scrollbar-width: none;
 		cursor: pointer;
 	}
 	.deebo_fn__cv:-webkit-scrollbar-track{
-		background: #000;
+		visibility: hidden;
 	}
 	.deebo_fn__cv::-webkit-scrollbar-thumb{
 		background-color: var(--mc);
 		border-radius: 10px;
+		visibility: hidden;
 	}
 	.deebo_fn__cv .cv__header{
 		width: 100%;
@@ -2493,4 +2494,14 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 		position: relative;
 		height: inherit;
 	}
+}
+
+@media (max-width: 540px) {
+    .deebo_fn__cv {
+        width: 100vw;
+        max-width: 100%;
+    }
+    .cv__header {
+        width: 100%;
+    }
 }
