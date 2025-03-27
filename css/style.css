@@ -257,7 +257,6 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 
 .deebo_fn__cv .cv__header .in{
   	scrollbar-width: thin;
-  	scrollbar-color: #000 #000;
 }
 .deebo_fn__cv .cv__header .in::-webkit-scrollbar{
 	width: 0;
