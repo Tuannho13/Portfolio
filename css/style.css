@@ -1030,6 +1030,7 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 .fn_cs_portfolio .portfolio_filter,
 .fn_cs_portfolio{
 	width: 100%;
+	height: auto;
 	float: left;
 	clear: both;
 }
@@ -1068,7 +1069,7 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 }
 .fn_cs_portfolio .portfolio_list{
 	width: 100%;
-	height: auto;
+	height: auto !important;
 	clear: both;
 	float: left;
 }
@@ -1077,6 +1078,9 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 	list-style-type: none;
 	position: relative;
 	z-index: 2;
+	display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 .fn_cs_portfolio .portfolio_list ul li{
 	margin: 0px 0px 25px 0px;
