@@ -1098,6 +1098,16 @@
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
 <script type="text/javascript" src="js/init.js?ver=4"></script>
 <!-- /Scripts -->
-
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const items = document.querySelectorAll(".portfolio_list .main");
+    items.forEach(item => {
+      const bg = item.getAttribute("data-bg-img");
+      if (bg) {
+        item.style.backgroundImage = `url('${bg}')`;
+      }
+    });
+  });
+</script>
 </body>
 </html>

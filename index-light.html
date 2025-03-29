@@ -1138,7 +1138,17 @@
     window.addEventListener("resize", function () {
         iso.layout();</script>
 		
-
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const items = document.querySelectorAll(".portfolio_list .main");
+    items.forEach(item => {
+      const bg = item.getAttribute("data-bg-img");
+      if (bg) {
+        item.style.backgroundImage = `url('${bg}')`;
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
